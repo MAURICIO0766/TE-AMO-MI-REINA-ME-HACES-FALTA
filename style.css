@@ -1,0 +1,133 @@
+/* =======================================
+   BRILLO EN LOS TÍTULOS
+======================================= */
+
+.title,
+.letter h2,
+.counter h2,
+.endingCard h1{
+    animation:titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow{
+
+0%,100%{
+    text-shadow:
+    0 0 10px #ff4f81,
+    0 0 20px #ff4f81;
+}
+
+50%{
+    text-shadow:
+    0 0 20px #ff7aa2,
+    0 0 45px #ff7aa2,
+    0 0 70px #ff2d55;
+}
+
+}
+
+/* =======================================
+   EFECTO GLASS HOVER
+======================================= */
+
+.glass,
+.letter,
+.photoCard,
+.endingCard,
+#timeTogether div{
+
+transition:.4s;
+
+}
+
+.glass:hover,
+.letter:hover,
+.photoCard:hover,
+.endingCard:hover,
+#timeTogether div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 50px rgba(255,0,90,.6);
+
+}
+
+/* =======================================
+   SCROLL PERSONALIZADO
+======================================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4f81;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#ff7aa2;
+
+}
+
+/* =======================================
+   SELECCIÓN DE TEXTO
+======================================= */
+
+::selection{
+
+background:#ff4f81;
+
+color:white;
+
+}
+
+/* =======================================
+   ANIMACIÓN LATIDO
+======================================= */
+
+.beat{
+
+animation:beat 1.3s infinite;
+
+}
+
+@keyframes beat{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+25%{
+
+transform:scale(1.08);
+
+}
+
+50%{
+
+transform:scale(0.96);
+
+}
+
+75%{
+
+transform:scale(1.1);
+
+}
+
+}
